@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup Gamer - Portfólio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #e0e0e0;
+    }
+
+    header {
+      text-align: center;
+      background: #111;
+      border-bottom: 1px solid #00ff66;
+      padding-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ff66;
+      margin-top: 10px;
+      text-shadow: 0 0 5px #00ff66, 0 0 10px #00cc55;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #333;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 4px 12px rgba(0, 255, 102, 0.3);
+    }
+
+    .card i {
+      font-size: 2.2rem;
+      color: #00ff66;
+      margin-bottom: 10px;
+      animation: glow 2s infinite alternate;
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    /* Links como botões */
+    .card a {
+      display: block;
+      text-decoration: none;
+      color: #00ff99;
+      font-weight: bold;
+      margin: 10px auto 0 auto;
+      padding: 12px 18px;
+      border: 1px solid #00cc55;
+      border-radius: 8px;
+      background: rgba(0, 255, 102, 0.05);
+      text-align: center;
+      transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      max-width: 240px;
+    }
+
+    .card a:hover {
+      background: #00cc55;
+      color: #fff;
+      box-shadow: 0 0 15px #00ff66, 0 0 30px #00cc55;
+      animation: pulse 1.5s infinite;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #111;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 300px;
+      background: url("https://s.zst.com.br/cms-assets/2021/12/melhor-pc-gamer.webp") center/cover no-repeat;
+      border-top: 3px solid #00ff66;
+      margin-top: 40px;
+    }
+
+    /* Animações */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 4px #00ff66, 0 0 8px #00cc55; }
+      50% { box-shadow: 0 0 10px #00ff66, 0 0 20px #00cc55; }
+      100% { box-shadow: 0 0 4px #00ff66, 0 0 8px #00cc55; }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ff66, 0 0 10px #00cc55; }
+      to { text-shadow: 0 0 15px #00ff66, 0 0 30px #00cc55; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💻 Setup Gamer do FRISZAO 🎮</h1>
+    <p>Meu PC em estilo showroom – Meu projeto HIGH_END!</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <i class="fa-solid fa-microchip"></i>
+      <h2>Processador</h2>
+      <a href="https://www.gigantec.com.br/processador-amd-ryzen-7-5700x-am4-4-6ghz-cache-36mb-s-cooler-s-video-100-100000926wof.html" target="_blank" rel="noopener noreferrer">Ryzen 7 5700X</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-video"></i>
+      <h2>Placa de Vídeo</h2>
+      <a href="https://www.terabyteshop.com.br/produto/36469/placa-de-video-asrock-amd-radeon-rx-9060-xt-challenger-oc-8gb-gddr6-fsr-ray-tracing-90-ga5tzz-00uanf" target="_blank" rel="noopener noreferrer">RX 9060XT 16GB</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-memory"></i>
+      <h2>Memória</h2>
+      <a href="https://pt.aliexpress.com/item/1005008424481178.html" target="_blank" rel="noopener noreferrer">32GB DDR4</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-hard-drive"></i>
+      <h2>SSD</h2>
+      <a href="https://pt.aliexpress.com/item/1005008218114438.html" target="_blank" rel="noopener noreferrer">240GB</a>
+      <a href="https://www.kabum.com.br/produto/85198/ssd-kingston-a400-480gb-sata-iii-2-5-leitura-500mb-s-gravacao-450mb-s-preto-sa400s37-480g" target="_blank" rel="noopener noreferrer">500GB</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-plug"></i>
+      <h2>Fonte</h2>
+      <a href="https://www.kabum.com.br/produto/516057/fonte-corsair-cx-series-cx750-750w-80-plus-bronze-com-cabo-preto-cp-9020279-br" target="_blank" rel="noopener noreferrer">Corsair CX 750</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-cube"></i>
+      <h2>Gabinete</h2>
+      <a href="https://www.kabum.com.br/produto/779918/gabinete-gamer-fsp-s110-b-mid-tower-m-atx-preto-s110-b" target="_blank" rel="noopener noreferrer">FSP S110-B</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-display"></i>
+      <h2>Monitores</h2>
+      <a href="https://www.kabum.com.br/produto/715967/monitor-gamer-samsung-odyssey-g5-27-qhd-165hz-1ms-freesync-hdmi-dp-preto" target="_blank" rel="noopener noreferrer">27" Curvo QHD</a>
+      <a href="https://www.terabyteshop.com.br/produto/30601/monitor-gamer-superframe-precision-27-pol-curvo-full-hd-1ms-180hz-freesync-hdmidp-preto-sfpcb-27180-fhd" target="_blank" rel="noopener noreferrer">27" Curvo Simples</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-microchip"></i>
+      <h2>Placa Mãe</h2>
+      <a href="https://www.kabum.com.br/produto/165133/placa-mae-asus-tuf-gaming-a520m-plus-ii-amd-am4-matx-ddr4-preto-90mb17g0-m0eay0" target="_blank" rel="noopener noreferrer">A320M</a>
+    </div>
+  </main>
+
+  <div class="banner"></div>
+
+  <footer>
+    <p>🚀 Criado por Filipe Fidélis • Showroom PC Gamer</p>
+  </footer>
+
+</body>
+</html>
